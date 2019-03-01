@@ -12,9 +12,6 @@
     <artifactId>cmss-security-core</artifactId>
     <version>${cmss.security.version}</version>
     <packaging>jar</packaging>
-    <modules>
-        <module>../cmss-security-browser</module>
-    </modules>
 
     <properties>
         <druid.version>1.1.14</druid.version>

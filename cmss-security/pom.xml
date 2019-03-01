@@ -6,7 +6,7 @@
 
     <groupId>com.chinamobile</groupId>
     <artifactId>cmss-security</artifactId>
-    <version>${cmss.security.version}</version>
+    <version>1.0.0</version>
     <modules>
         <module>../cmss-security-core</module>
     </modules>
