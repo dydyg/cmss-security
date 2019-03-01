@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.chinamobile</groupId>
+    <artifactId>cmss-security</artifactId>
+    <version>${cmss.security.version}</version>
+    <modules>
+        <module>../cmss-security-core</module>
+    </modules>
+    <packaging>pom</packaging>
+    <description>Spring Security源码分析项目</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <spring.platform.version>Cairo-SR7</spring.platform.version>
+        <cmss.security.version>1.0.0</cmss.security.version>
+    </properties>
+
+    <developers>
+        <developer>
+            <name>江平平</name>
+            <organization>中移（苏州）软件技术有限公司</organization>
+            <organizationUrl>http://cmsoft.10086.cn/</organizationUrl>
+            <email>jiangpingping@cmss.chinamobile.com</email>
+        </developer>
+    </developers>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${spring.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Edgware.SR2</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
